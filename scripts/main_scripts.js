@@ -260,11 +260,11 @@ export async function LoadFirstGraph() {
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
     //Read the data
-    var data = await d3.csv('../stats/MSPUS.csv', d => {
+    var data = await d3.csv('/visual-narrative/stats/MSPUS.csv', d => {
         return { year: new Date(d.date), price: d.price }
     });
 
-    var usPop = await d3.csv('../stats/POPTOTUSA647NWDB.csv', d => {
+    var usPop = await d3.csv('/visual-narrative/stats/POPTOTUSA647NWDB.csv', d => {
         return { year: new Date(d.year), population: d.population }
     });
 
