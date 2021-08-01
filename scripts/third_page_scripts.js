@@ -22,12 +22,12 @@ export async function RenderGraphs() {
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 
-    var houseSizeData = await d3.csv("../stats/year_to_house_size.csv", d => {
+    var houseSizeData = await d3.csv("/visual-narrative/stats/year_to_house_size.csv", d => {
         // console.log(new Date(d.year), d.size)
         return { year: new Date(d.year), size: d.size }
     })
 
-    var housePriceData = await d3.csv('../stats/MSPUS.csv', d => {
+    var housePriceData = await d3.csv('/visual-narrative/stats/MSPUS.csv', d => {
         return { year: new Date(d.date), price: d.price }
     });
 
