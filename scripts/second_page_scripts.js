@@ -21,11 +21,11 @@ export async function RenderGraphs() {
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    var interestData = await d3.csv('../stats/MORTGAGE30US.csv', d => {
+    var interestData = await d3.csv('/visual-narrative/stats/MORTGAGE30US.csv', d => {
         return { year: new Date(d.year), rate: d.rate }
     })
 
-    var housePriceData = await d3.csv('../stats/MSPUS.csv', d => {
+    var housePriceData = await d3.csv('/visual-narrative/stats/MSPUS.csv', d => {
         return { year: new Date(d.date), price: d.price }
     });
 
