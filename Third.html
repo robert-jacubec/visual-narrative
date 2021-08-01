@@ -1,0 +1,41 @@
+<html>
+<link rel="stylesheet" href="./css/style.css">
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://rawgit.com/susielu/d3-annotation/master/d3-annotation.min.js"></script>
+<script type="module">
+    import * as main_scripts from './scripts/third_page_scripts.js';
+
+    main_scripts.RenderGraphs();
+</script>
+
+<body>
+    <div class="main"></div>
+
+    <div class="flex-container">
+        <div class="flex-container" , id="inner">
+            <h1 id="subtitle">Housing Size and House Prices</h1>
+            <div class="graph-goes-here">
+            </div>
+
+            <div class="text">
+
+                <button class="nav-button small-button" disabled="true">Next</button>
+                <button class="nav-button small-button" onclick="window.location='/Second.html'">Prev</button>
+
+                <br/>
+                <h3>About This Graph:</h3>
+                <p class="paragraph">
+                    Another parameter that is positively correlated with house prices is the <b>house size</b> itself. Homes have become <br/>
+                    larger and larger over time. Thus, the house price will be affect by increased house size. <br/>
+                    Americans have been demanding larger and larger homes. So, house builders have been building larger <br/>
+                    and larger homes to meet the demand of consumers. Thus, house prices also increased to reflect 
+                    <br/> the increasing sizes of homes.
+                </p>
+
+                <h4>Note: click on a curve to bring up a tooltip. Click anywhere else to clear out selection.</h4>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

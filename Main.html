@@ -1,0 +1,65 @@
+<html>
+<link rel="stylesheet" href="./css/style.css">
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://rawgit.com/susielu/d3-annotation/master/d3-annotation.min.js"></script>
+<script type="module">
+    import * as main_scripts from './scripts/main_scripts.js';
+
+    main_scripts.LoadFirstGraph();
+</script>
+
+<body>
+    <div class="main"></div>
+
+    <div class="flex-container">
+        <div class="flex-container" , id="inner">
+            <h1 id="subtitle">United States Population and United States House Prices</h1>
+            <div class="graph-goes-here"></div>
+
+
+            <div class="text">
+
+                <button class="nav-button small-button" onclick="window.location='/Second.html'">Next</button>
+                <button class="nav-button small-button" disabled="true">Prev</button>
+
+                <br />
+                <br />
+
+                <h3>Introduction:</h3>
+                <p> This set of graphs focus on select parameters that influence house prices.
+                    <br />
+                    Here are some of the parameters that influence house prices:
+                </p>
+
+                <div>
+                    <ul>
+                        <li>Population</li>
+                        <li>Mortgage Interest Rates</li>
+                        <li>House size</li>
+                    </ul>
+                </div>
+                <br />
+
+
+                <div class="divider"></div>
+                <p class="paragraph">
+                    <h3>About This Graph:</h3>
+                    The main parameter positively related to house prices in the United States is population.<br />
+                    As one can see, as the United States population rises so have house prices risen as well. <br />
+                    The positive correlation between United States House Prices and United States population is due to
+                    <br />
+                    increased demand for homes; as population rises so will demand rise for homes. When the demand for
+                    homes increase <br />
+                    the house prices will increase as well.
+                    <br />
+                    <br />
+                    <h4>Note: click on a curve to bring up a tooltip. Click anywhere else to clear out selection.</h4>
+                </p>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+https://www.officialdata.org/us/inflation/1965?endYear=2018&amount=1 -> inflation
+
+https://fred.stlouisfed.org/series/POPTOTUSA647NWDB -> population since 1965
+
+https://fred.stlouisfed.org/series/MSPUS -> median sale price home
+
+https://fred.stlouisfed.org/series/MSACSR -> inventory sale price home
+
+https://www.census.gov/construction/nrs/historical_data/index.html -> new homes for sale US
+
+https://247wallst.com/special-report/2016/05/25/the-size-of-a-home-the-year-you-were-born/11/ -> year_to_house_size

@@ -1,0 +1,41 @@
+<html>
+<link rel="stylesheet" href="./css/style.css">
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://rawgit.com/susielu/d3-annotation/master/d3-annotation.min.js"></script>
+<script type="module">
+    import * as main_scripts from './scripts/second_page_scripts.js';
+
+   main_scripts.RenderGraphs();
+</script>
+
+<body>
+    <div class="main"></div>
+
+    <div class="flex-container">
+        <div class="flex-container" , id="inner">
+            <h1 id="subtitle">30 Year Mortgage Interest Rates and House Prices</h1>
+            <div class="graph-goes-here">
+            </div>
+
+            <div class="text">
+
+                <button class="nav-button small-button" onclick="window.location='/Third.html'">Next</button>
+                <button class="nav-button small-button" onclick="window.location='/Main.html'">Prev</button>
+
+                <br/>
+                <h3>About This Graph:</h3>
+                <p class="paragraph">
+                    Another parameter related to increasing house prices is the <b>30 year mortgage rate.</b><br/>
+                    The way mortgage rates affect house prices is by allowing money to be more accessible to consumers.<br/>
+                    Accessability of money is indirectly proportional to house prices. The indirect proportionality is due <br/>
+                    to the fact that if interest rates are lower, then more consumers are willing to borrow money to buy homes.<br/>
+                    If more of the population is buying homes then the demand of homes will be driven up and so will prices of homes.
+                </p>
+
+                <h4>Note: click on a curve to bring up a tooltip. Click anywhere else to clear out selection.</h4>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
